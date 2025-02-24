@@ -46,5 +46,5 @@ ed2 = Entry(i)
 ed2.place(x=230,y=180)
 
 lb=Label(i,text="CaioLuizBattisti")
-lb.place(x=230,y=230)
+lb.place(x=230,y=200)
 i.mainloop()
