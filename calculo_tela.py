@@ -23,6 +23,7 @@ def bt_divisao():
 i=Tk()
 i.title("Programa Financeiro")
 i.geometry('980x720+250+30')
+i['bg']= "orange"
 
 lb=Label(i,text="0")
 lb.place(x=230,y=200)
