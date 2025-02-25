@@ -1,24 +1,46 @@
 from tkinter import *
 
 def bt_soma():
-    num1 = int(ed1.get())
-    num2 = int(ed2.get())
-    lb["text"] = num1 + num2
+    #o codigo abaixo e para validar a entrada apenas de numero
+    if(str(ed1.get()).isnumeric()and str(ed2.get()).isnumeric()):
+        num1 = int(ed1.get())
+        num2 = int(ed2.get())
+        #se os valores nao forem numericos imprime a mensagem abaixo
+        lb["text"] = num1 + num2
+        lb["bg"]= "#00FA9A"
+    else:
+        lb["text"] = "valores sao invalidos"
+        lb["bg"] = "red"
 
 def bt_subtração():
-    num1 = int(ed1.get())
-    num2 = int(ed2.get())
-    lb["text"] = num1 - num2
+    if(str(ed1.get()).isnumeric()and str(ed2.get()).isnumeric()):
+        num1 = int(ed1.get())
+        num2 = int(ed2.get())
+        lb["text"] = num1 - num2
+        lb["bg"]= "#00FA9A"
+    else:
+        lb["text"] = "valores sao invalidos"
+        lb["bg"] = "red"
 
 def bt_multiplicacao():
-    num1 = int(ed1.get())
-    num2 = int(ed2.get())
-    lb["text"] = num1 * num2 
+    if(str(ed1.get()).isnumeric()and str(ed2.get()).isnumeric()):
+        num1 = int(ed1.get())
+        num2 = int(ed2.get())
+        lb["text"] = num1 * num2
+        lb["bg"]= "#00FA9A"
+    else:
+        lb["text"] = "valores sao invalidos"
+        lb["bg"] = "red"
 
 def bt_divisao():
-    num1 = int(ed1.get())
-    num2 = int(ed2.get())
-    lb["text"] = num1 / num2
+    if(str(ed1.get()).isnumeric()and str(ed2.get()).isnumeric()):
+        num1 = int(ed1.get())
+        num2 = int(ed2.get())
+        lb["text"] = num1 / num2
+        lb["bg"]= "#00FA9A"
+    else:
+        lb["text"] = "valores sao invalidos"
+        lb["bg"] = "red"
 
 i=Tk()
 i.title("Programa Financeiro")
