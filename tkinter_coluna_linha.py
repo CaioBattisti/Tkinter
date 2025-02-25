@@ -5,7 +5,11 @@ i.geometry('980x720+250+30')
 
 lb1=Label(i,text="Login",bg="yellow")
 #componente .grid serve tambem para posicionar utilizando indicativo de linha(row) e coluna (column).
+
 lb1.grid(row=1,column=2)
+
+lb1.grid(row=1,column=2)#x=230,y=200
+
 
 lb2=Label(i,text="Senha",bg="red")
 lb2.grid(row=9,column=2)
