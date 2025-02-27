@@ -15,7 +15,7 @@ def bt_clicar():
 # i (instanciar) recebe o objeto Tk
 i=Tk()
 #gerar titulo da janela
-i.title('Progrma Financeiro')
+i.title('Programa Financeiro')
 i.geometry('980x720+250+30')
 i['bg']="green"
 
