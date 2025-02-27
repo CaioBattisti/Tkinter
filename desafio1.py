@@ -20,20 +20,20 @@ ed2.grid(row=10,column=1)
 bt1 = Button(i,text="Login")
 bt1.grid(row=11,column=1)'''
 
-#o codigo abaixo faz coreção das posições das labels,caixa de texto e botao
+#o codigo abaixo faz coreção das posições das labels,caixa de texto e botao [✓] Feito
 lb1=Label(i,text="Login:",bg="yellow")
-lb1.grid(row=1,column=1)
+lb1.place(x=800,y=1)
 
 lb2=Label(i,text="Senha:",bg="red")
-lb2.grid(row=2,column=1)
+lb2.place(x=800,y=23)
 
 ed1 = Entry(i)
-ed1.grid(row=1,column=2)
+ed1.place(x=842,y=23)
 
 ed2 = Entry(i)
-ed2.grid(row=2,column=2)
+ed2.place(x=842,y=4)
 
 bt1 = Button(i,text="Login")
-bt1.grid(row=3,column=1)
+bt1.place(x=800,y=43)
 
 i.mainloop()
